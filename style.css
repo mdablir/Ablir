@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap');
+
+:root{
+  --hotpink:#ED7979;
+}
+
+*{
+  font-family: 'Bree Serif', serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+ }
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  background:#333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 9%;
+}
+
+header .JT{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+header .JT span{
+  color:var(--hotpink);
+}
+
+header .navbar a{
+  color:#fff;
+  font-size: 2rem;
+  margin:0 .8rem;
+}
+
+header .navbar a:hover{
+  color:var(--hotpink);
+}
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+
+.home .index{
+  text-align: center;
+  letter-spacing:3px;
+}
+
+.home .index h3{
+  font-size: 4.5rem;
+  color:#fff;
+  text-transform: uppercase;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.home .index p{
+  font-size: 2.5rem;
+  color:#fff;
+  padding:.5rem 0;
+}
+
+.home .video-cont video{
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+h1{
+  position: absolute;
+  top: 100px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+
+}
+.des .bg img{
+  position: fixed;
+  top:10%; left: 0;
+  z-index: -1;  
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.des h3{
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.des p{
+text-transform:none;
+}
+.des .photos{
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  padding-bottom:5rem;
+}
+
+.des .photos .picture{
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border:1rem solid #fff;
+  border-radius: .5rem;
+  flex:1 1 30rem;
+  height: 30rem;
+  width:40rem;
+  position: relative;
+}
+
+.des .photos .picture img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.des .photos .picture .name{
+  position: absolute;
+  top:-100%; left:0;
+  height: 100%;
+  width:100%;
+  text-align: center;
+  background:rgba(0,0,0,.7);
+  padding:2rem;
+  padding-top: 5rem;
+}
+
+.des .photos .picture:hover .name{
+  top:0;
+}
+
+.des .photos .picture .name h3{
+  font-size: 2rem;
+  color:var(--hotpink);
+}
+
+.des .photos .picture .name p{
+  font-size: 1.5rem;
+  color:#eee;
+  padding:.5rem 0;
+}
+
+.contact .row{
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.contact .row .image{
+  flex:1 1 35rem;
+}
+
+.contact .row .image img{
+  width:100%;
+}
+
+.contact textarea{
+  flex:1 1 50rem;
+  padding:2rem;
+  padding-right:9rem;
+  text-transform:none;
+  background-color:#fff;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .3rem;
+  height: 15rem;
+  width:100%;
+  resize: none;
+  text-align:center;
+  overflow:hidden;
+  font-family: 'Bree Serif', serif;
+  font-size:20px;
+}
+
+.contact .row textarea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.guide .gcon{
+  position: relative;
+  top: 150px;
+  width: 70%;
+  padding: 2rem;
+  border: 5px solid gray;
+  margin: auto;
+ bottom:50px;
+ background-color:#fff;
+}
+
+.guide .gcon h3{
+	font-size:20px;
+	text-align:center;
+}
+
+.guide .gcon p{
+	font-size:15px;
+	text-align:center;
+}
